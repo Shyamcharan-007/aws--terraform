@@ -1,0 +1,11 @@
+provider "aws" {
+    region="us east-1"
+}
+resource "aws instance" " sample"{
+ami id ="ami-0c101f26f147a7fd"
+instance type ="t3.micro"
+tags ={
+    name="sample"
+}
+}
+
